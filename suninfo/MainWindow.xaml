@@ -1,0 +1,22 @@
+﻿<Window x:Class="suninfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:suninfo"
+        mc:Ignorable="d"
+        Title="Sun Info" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Content="Select Country" Margin="20"></Label>
+            <ComboBox Name="Country" Margin="20">
+                <ComboBoxItem Content="Romania"/>
+                <ComboBoxItem Content="France"/>
+                <ComboBoxItem Content="Mexico"/>
+            </ComboBox>
+            <Button x:Name="LoadSunInfo" Margin="20" Click="LoadSunInfo_Click"> Load Sun Info</Button>
+            <TextBlock x:Name="sunriseText" Margin="20"/>
+            <TextBlock x:Name="sunsetText" Margin="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
